@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="BOOK.SearchPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BOOK">
+
+    <StackPanel Margin="30" Spacing="20">
+        <TextBlock Text="🔍 Tìm kiếm sách"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,10"/>
+
+        <TextBox x:ConnectionId='2' x:Name="NameBox" PlaceholderText="Tên người dùng" />
+        <TextBox x:ConnectionId='3' x:Name="CategoryBox" PlaceholderText="Thể loại" />
+        <TextBox x:ConnectionId='4' x:Name="TitleBox" PlaceholderText="Tên sách" />
+        <TextBox x:ConnectionId='5' x:Name="QuantityBox" PlaceholderText="Số lượng cần" InputScope="Number"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+            <Button x:ConnectionId='6' Content="📌 Kiểm tra"                           Width="120" />
+            <Button x:ConnectionId='7' Content="🔙 Trở về"                    Width="120" />
+        </StackPanel>
+    </StackPanel>
+</Page>
+

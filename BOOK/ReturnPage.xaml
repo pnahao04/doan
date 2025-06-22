@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="BOOK.ReturnPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BOOK">
+
+    <StackPanel Margin="30" Spacing="20">
+        <TextBlock Text="📦 Trả sách" FontSize="24" FontWeight="Bold"/>
+
+        <TextBox PlaceholderText="Họ tên"/>
+        <TextBox PlaceholderText="Tuổi" InputScope="Number"/>
+        <TextBox PlaceholderText="Số điện thoại" InputScope="TelephoneNumber"/>
+        <TextBox PlaceholderText="Thể loại"/>
+        <TextBox PlaceholderText="Tên sách"/>
+
+        <DatePicker Header="Ngày trả"/>
+
+        <Button Content="Trả sách" />
+        <Button Content="🔙 Trở về" Click="Back_Click"/>
+    </StackPanel>
+</Page>
